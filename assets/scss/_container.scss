@@ -1,0 +1,23 @@
+.container {
+    min-height: 80vh;
+    background-color: #F9FAFB;
+    padding: 1.5rem 0 3rem 0;
+
+    &__text {
+        color: #020202;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    &__question {
+        text-align: center;
+    }
+
+    &__login {
+        text-decoration: none;
+        color: #596D48;
+        font-weight: bold;
+    }
+}

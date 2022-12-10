@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: my-cool-font;
+    src: url('../fonts/Norse-Bold.otf');
+}
+
+body, html {
+    font-family: sans-serif;
+}
