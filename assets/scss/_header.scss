@@ -1,29 +1,42 @@
 .header {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    height: 20vh;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  height: 20vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    height: 70%;
+    width: 100%;
+    background: rgba(black, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__logo {
+    height: 70%;
+    object-fit: contain;
+  }
+
+  &__title {
+    color: white;
+    font-family: my-cool-font;
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    min-height: 100vh;
+    height: 100%;
+
+    position: relative;
 
     &__content {
-        height: 70%;
-        width: 100%;
-        background: rgba(black, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      position: absolute;
+      top: 21%;
+      height: min(14%, 150px);
     }
-
-    &__logo {
-        height: 70%;
-        object-fit: contain;
-    }
-
-    &__title {
-        color: white;
-        font-family: my-cool-font;
-        font-size: 2.5rem;
-    }
+  }
 }

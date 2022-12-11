@@ -12,3 +12,10 @@
 body, html {
     font-family: sans-serif;
 }
+
+@media screen and (min-width: 900px) {
+    body {
+        display: grid;
+        grid-template-columns: 533px 1fr;
+    }
+}

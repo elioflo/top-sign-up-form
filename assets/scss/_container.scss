@@ -20,4 +20,23 @@
         color: #596D48;
         font-weight: bold;
     }
+
+    @media screen and (min-width: 1085px) {
+        padding: 10% 0 2rem 0;
+
+        &__text {
+            font-size: 1.1rem;
+            color: #020202;
+            margin-bottom: 1rem;
+            max-width: 600px;
+            text-align: unset;
+            padding-left: 3rem;
+        }
+        &__question {
+            text-align: left;
+            margin-top: 2rem;
+            padding-left: 3rem;
+        }
+        
+    }
 }

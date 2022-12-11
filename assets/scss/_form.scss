@@ -7,6 +7,7 @@
     }
 
     &__background {
+        min-height: 310px;
         background-color: #FFFFFF;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
         padding: 1rem;
@@ -18,11 +19,13 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        max-width: 600px;
+        min-height: 310px;
     }
 
     &__input {
         display: block;
-        width: min(70vh,300px);
+        width: min(70vh,260px);
         max-width: 300px;
         border: 1px solid #E5E7EB;
         border-radius: 5px;
@@ -44,6 +47,7 @@
             margin-bottom: 2rem;
         }
     }
+    
 
     &__button {
         display: block;
@@ -53,5 +57,34 @@
         padding: 0.6rem 2.5rem;
         border-radius: 8px;
         margin: 2rem auto;
+    }
+
+    @media screen and (min-width: 1085px) {
+        &__legend {
+            text-align: left;
+        }
+
+        &__background {
+            padding-left: 3rem;
+        }
+        
+        &__inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3,100px);
+            align-items: center;
+        }
+
+        &__label {
+            margin: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__button {
+            margin: 2rem 3rem 0;
+        }
+        
     }
 }

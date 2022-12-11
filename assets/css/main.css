@@ -12,6 +12,12 @@ body, html {
   font-family: sans-serif;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 533px 1fr;
+  }
+}
 .header {
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -37,6 +43,18 @@ body, html {
   font-family: my-cool-font;
   font-size: 2.5rem;
 }
+@media screen and (min-width: 900px) {
+  .header {
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+  }
+  .header__content {
+    position: absolute;
+    top: 21%;
+    height: min(14%, 150px);
+  }
+}
 
 .container {
   min-height: 80vh;
@@ -58,6 +76,24 @@ body, html {
   color: #596D48;
   font-weight: bold;
 }
+@media screen and (min-width: 1085px) {
+  .container {
+    padding: 10% 0 2rem 0;
+  }
+  .container__text {
+    font-size: 1.1rem;
+    color: #020202;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    text-align: unset;
+    padding-left: 3rem;
+  }
+  .container__question {
+    text-align: left;
+    margin-top: 2rem;
+    padding-left: 3rem;
+  }
+}
 
 .form__legend {
   color: #020202;
@@ -65,6 +101,7 @@ body, html {
   text-align: center;
 }
 .form__background {
+  min-height: 310px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
   padding: 1rem;
@@ -75,10 +112,12 @@ body, html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 600px;
+  min-height: 310px;
 }
 .form__input {
   display: block;
-  width: min(70vh, 300px);
+  width: min(70vh, 260px);
   max-width: 300px;
   border: 1px solid #E5E7EB;
   border-radius: 5px;
@@ -105,6 +144,29 @@ body, html {
   padding: 0.6rem 2.5rem;
   border-radius: 8px;
   margin: 2rem auto;
+}
+@media screen and (min-width: 1085px) {
+  .form__legend {
+    text-align: left;
+  }
+  .form__background {
+    padding-left: 3rem;
+  }
+  .form__inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    align-items: center;
+  }
+  .form__label {
+    margin: 0;
+  }
+  .form__label:last-child {
+    margin-bottom: 0;
+  }
+  .form__button {
+    margin: 2rem 3rem 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
